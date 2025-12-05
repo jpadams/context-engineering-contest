@@ -2,11 +2,7 @@
   "name": "Zep Eval Harness",
   "image": "mcr.microsoft.com/devcontainers/python:3.10",
 
-  "features": {
-    "ghcr.io/astral-sh/uv:latest": {}
-  },
-
-  "postCreateCommand": "cd zep-eval-harness && bash ../.devcontainer/post-create.sh",
+  "postCreateCommand": "pip install uv && bash ../.devcontainer/post-create.sh",
 
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/zep-eval-harness",
 
